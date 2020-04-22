@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://hawslice.com/"/>
-  <updated>2020-04-22T05:42:20.629Z</updated>
+  <updated>2020-04-22T15:15:21.815Z</updated>
   <id>http://hawslice.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C语言变量名</title>
+    <link href="http://hawslice.com/2020/04/22/C%E8%AF%AD%E8%A8%80%E5%8F%98%E9%87%8F/"/>
+    <id>http://hawslice.com/2020/04/22/C%E8%AF%AD%E8%A8%80%E5%8F%98%E9%87%8F/</id>
+    <published>2020-04-22T15:01:29.000Z</published>
+    <updated>2020-04-22T15:15:21.815Z</updated>
+    
+    <content type="html"><![CDATA[<p>变量其实只不过是程序可操作的存储区的名称。C 中每个变量都有特定的类型，类型决定了变量存储的大小和布局，该范围内的值都可以存储在内存中，运算符可应用于变量上。</p><a id="more"></a><p> 对变量的命名与符号常量的命名存在一些限制条件，名字是由字母和数字组成的序列，但其第一个字符必须为字母。</p><p> 下划线<code>&quot;_&quot;</code>被看作字母，通常用于命名较长的变量名，以提高其可读性。由于库例程的名字通常以下划线开头，因此变量不要以下划线开头。</p><p> 大写字母与小写字母是有区别的，所以X和x是两个不同的名字。在传统的C语言用法中，变量名使用小写字母，符号常量名全部使用大写字母。</p><p> 对于内部名而言，至少前31个字符是有效的。函数名与外部变量名包含的字符数目可能小于31，这是因为汇编程序和加载程序可能会使用这些外部名，而语言本身是无法控制加载和汇编程序的。</p><p> 对于外部名，ANSI标准仅保证前6个字符的唯一性，并且不区分大小写。类似于<code>if、else、int、float</code>等关键字是保留给语言本身使用的，不能把他们用作变量名。所有关键字中的字符都必须小写。</p><p> 选择的变量名能够尽量从字面上表达变量的用途，这样不容易引起混淆。局部变量一般使用较短的变量名（尤其是循环控制的变量），外部变量使用较长的名字。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;变量其实只不过是程序可操作的存储区的名称。C 中每个变量都有特定的类型，类型决定了变量存储的大小和布局，该范围内的值都可以存储在内存中，运算符可应用于变量上。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="C程序设计语言" scheme="http://hawslice.com/categories/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="编程" scheme="http://hawslice.com/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="C语言" scheme="http://hawslice.com/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
   
   <entry>
     <title>C语言基本数据类型及长度</title>
