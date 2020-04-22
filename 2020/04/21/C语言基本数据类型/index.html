@@ -29,7 +29,7 @@
 <meta property="og:description" content="在 C 语言中，数据类型指的是用于声明不同类型的变量或函数的一个广泛的系统，其中函数的类型指的是函数返回值的类型。对象的类型决定该对象可取值的集合以及可以对该对象执行的操作。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-04-21T14:53:40.000Z">
-<meta property="article:modified_time" content="2020-04-22T05:34:59.071Z">
+<meta property="article:modified_time" content="2020-04-22T05:42:20.629Z">
 <meta property="article:author" content="Teow">
 <meta property="article:tag" content="编程">
 <meta property="article:tag" content="C语言">
@@ -301,7 +301,7 @@
 </tbody></table>
 <p>注：上述内容皆适用于常见的64位系统，对于其他具体机器，可能会出现不同存储大小。</p>
 <h3 id="补充说明"><a href="#补充说明" class="headerlink" title="补充说明"></a><font color="purple">补充说明</font></h3><p><code>short</code>与<code>long</code>两个限定符的引入可以为我们提供满足实际需要的不同长度的整型数。<code>int</code>通常代表特定机器中整数的自然长度。编译器可以根据硬件性能特性自主选择合适的类型长度，但要遵循下列限制：<code>short</code>与<code>int</code>类型至少为16位，二<code>long</code>类型至少位32位，并且<code>short</code>类型不得长于<code>int</code>类型，而<code>int</code>类型不得长于<code>long</code>类型。</p>
-<p>类型限定符<code>signed</code>与<code>unsigned</code>可用于限定<code>char</code>类型或任何整型。<code>unsigned</code>类型得数总是正值或0，并遵守算数模2^n，其中n是该类型占用的位数。例如，如果<code>char</code>对象占用8位，那么<code>unsigned char</code>类型变量的取值范围是0<del>255，而<code>signed char</code>类型变量的取值范围则为-128</del>127（在采用二进制补码的机器上）。不带限定符的<code>char</code>类型对象是否带符号取决于具体的机器，但可打印字符总是正值。</p>
+<p>类型限定符<code>signed</code>与<code>unsigned</code>可用于限定<code>char</code>类型或任何整型。<code>unsigned</code>类型得数总是正值或0，并遵守算数模2^n，其中n是该类型占用的位数。例如，如果<code>char</code>对象占用8位，那么<code>unsigned char</code>类型变量的取值范围是0~255，而<code>signed char</code>类型变量的取值范围则为-128~127（在采用二进制补码的机器上）。不带限定符的<code>char</code>类型对象是否带符号取决于具体的机器，但可打印字符总是正值。</p>
 <p><code>long double</code>类型表示高精度浮点数。同整型一样，浮点型的长度也取决于具体的实现，<code>float</code>、<code>double</code>与<code>long double</code>类型可以表示相同的长度，也可以表示两种或三种不同的长度。</p>
 <p>有关这些类型长度定义的符号常量以及其他与机器和编译器有关的属性可以在标准头文件<code>&lt;limits.h&gt;</code>与<code>&lt;float.h&gt;</code>中找到。</p>
 
@@ -312,7 +312,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2020-04-22T05:34:59.071Z" itemprop="dateUpdated">2020-04-22 13:34:59</time>
+    最后更新时间：<time datetime="2020-04-22T05:42:20.629Z" itemprop="dateUpdated">2020-04-22 13:42:20</time>
 </span><br>
 
 
