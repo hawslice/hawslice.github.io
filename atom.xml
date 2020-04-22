@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Teow&#39;s blog</title>
   
-  
+  <subtitle>吾将上下而求索</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://hawslice.com/"/>
