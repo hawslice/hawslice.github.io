@@ -30,7 +30,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://teow-md.oss-cn-qingdao.aliyuncs.com/images/20200424000559.png">
 <meta property="article:published_time" content="2020-04-23T14:44:41.000Z">
-<meta property="article:modified_time" content="2020-04-23T16:24:30.221Z">
+<meta property="article:modified_time" content="2020-04-25T14:01:51.257Z">
 <meta property="article:author" content="Teow">
 <meta property="article:tag" content="编程">
 <meta property="article:tag" content="C语言">
@@ -63,7 +63,7 @@
         </a>
         <hgroup class="introduce">
           <h5 class="nickname">Teow</h5>
-          <a href="mailto:network_szp@foxmail.com" title="network_szp@foxmail.com" class="mail">network_szp@foxmail.com</a>
+          <a href="mailto:szp_network@foxmail.com" title="szp_network@foxmail.com" class="mail">szp_network@foxmail.com</a>
         </hgroup>
       </div>
     </div>
@@ -170,7 +170,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#整型常量"><span class="post-toc-number">1.</span> <span class="post-toc-text">整型常量</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#浮点数常量"><span class="post-toc-number">2.</span> <span class="post-toc-text">浮点数常量</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#字符常量"><span class="post-toc-number">3.</span> <span class="post-toc-text">字符常量</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#常量表达式"><span class="post-toc-number">4.</span> <span class="post-toc-text">常量表达式</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#整型常量"><span class="post-toc-number">1.</span> <span class="post-toc-text">整型常量</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#浮点数常量"><span class="post-toc-number">2.</span> <span class="post-toc-text">浮点数常量</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#字符常量"><span class="post-toc-number">3.</span> <span class="post-toc-text">字符常量</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#常量表达式"><span class="post-toc-number">4.</span> <span class="post-toc-text">常量表达式</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#字符串常量"><span class="post-toc-number">5.</span> <span class="post-toc-text">字符串常量</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#枚举常量"><span class="post-toc-number">6.</span> <span class="post-toc-text">枚举常量</span></a></li></ol>
         </nav>
     </aside>
 
@@ -218,7 +218,7 @@
 
 <p>没有后缀的浮点数常量为<code>double</code>类型。后缀f或F表示<code>float</code>类型（如3.14F），而后缀l或L则表示<code>long double</code>类型（如314159E-5L）。</p>
 <p><strong>注</strong>：浮点型常量中不能有空格！</p>
-<h2 id="字符常量"><a href="#字符常量" class="headerlink" title="字符常量"></a><font color="purple">字符常量</font></h2><p><strong>一个字符常量</strong>时一个整数，书写时将一个字符括在单引号中，如<code>&#39;x&#39;</code>。字符在机器字符集中的数值就是字符常量的值。例如，在ASCII字符集中，字符’0’的值为48，它与数值0没有关系。如果用’0’代替这个具体字符集有关的值（比如48），那么，程序就无须关心该字符对应的具体值，增加程序的易读性。</p>
+<h2 id="字符常量"><a href="#字符常量" class="headerlink" title="字符常量"></a><font color="purple">字符常量</font></h2><p><strong>一个字符常量</strong>是一个整数，书写时将一个字符括在单引号中，如<code>&#39;x&#39;</code>。字符在机器字符集中的数值就是字符常量的值。例如，在ASCII字符集中，字符’0’的值为48，它与数值0没有关系。如果用’0’代替这个具体字符集有关的值（比如48），那么，程序就无须关心该字符对应的具体值，增加程序的易读性。</p>
 <p>字符常量一般用来与其他字符进行比较，但也可以像其他整数一样参与数值运算。</p>
 <p>某些字符可以通过转义字符系列（例如，换行符\n）表示为字符和字符串常量。转义字符看起来像两个字符，但只表示一个字符。另外我们可以用<code>\ooo</code>表示任意的字节大小的位模式。其中，<em>ooo</em>代表1~3个八进制数字（0~\7）。</p>
 <p>这种位模式还可以用<code>\xhh</code>表示，其中，<em>hh</em>是一个或多个十六进制数字。因此我们可以按照下列形式书写语句：</p>
@@ -300,6 +300,27 @@
 
 <p>或</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LEAP 1  <span class="comment">//闰年</span></span></span><br><span class="line"><span class="keyword">int</span> days[<span class="number">31</span>+<span class="number">28</span>+LEAP+<span class="number">31</span>+<span class="number">30</span>+<span class="number">31</span>+<span class="number">30</span>+<span class="number">31</span>+<span class="number">31</span>+<span class="number">30</span>+<span class="number">31</span>+<span class="number">30</span>+<span class="number">31</span>]；</span><br></pre></td></tr></table></figure>
+
+<h2 id="字符串常量"><a href="#字符串常量" class="headerlink" title="字符串常量"></a><font color="purple">字符串常量</font></h2><p><strong>字符串常量</strong>也叫<strong>字符串字面值</strong>，是用双引号括起来的0个或多个字符组成的在字符序列。例如：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"I am a string"</span></span><br></pre></td></tr></table></figure>
+
+<p>或</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">""</span>      <span class="comment">//空字符串</span></span><br></pre></td></tr></table></figure>
+
+<p>都是字符串。双引号不是字符串的一部分，它只用于限定字符串。字符常量中使用的转义字符序列同样可以用在字符串中。在字符串中使用<code>\&quot;</code>表示双引号字符。编译时可以将多个字符串常量连接起来，例如下列形式：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"hello,"</span><span class="string">"world"</span></span><br></pre></td></tr></table></figure>
+
+<p>等价于</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"hello,world"</span></span><br></pre></td></tr></table></figure>
+
+<p>字符串常量的连接为将较长的字符串分散在若干个源文件行中提供了支持。</p>
+<p>从技术角度看，字符串常量就是字符数组。字符串内部表示使用一个空字符<code>&#39;\0&#39;</code>作为串的结尾，因此，存储字符串的物理存储单元数比括在双引号中的字符多一个。这种表示方法也说明，C语言对字符串的长度没有限制，但程序必须扫描完整个字符串后才能确定字符串的长度。标准库函数<code>strlen(s)</code>可以返回字符参数s的长度，但长度不包括末尾的<code>&#39;\0&#39;</code>。</p>
+<p>下面是设计的<code>strlen</code>函数的一个版本：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">strlen</span><span class="params">(<span class="keyword">char</span> s[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i;</span><br><span class="line"></span><br><span class="line">    i = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span> (s[i] != <span class="string">'\0'</span>)</span><br><span class="line">        ++i;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> i;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>标准头文件<code>&lt;string.h&gt;</code>中声明了<code>strlen</code>和其他字符串函数。</p>
+<p>我们应该搞清楚字符常量与仅包含一个字符的字符串的区别，例如<code>&#39;x&#39;</code>与<code>&quot;x&quot;</code>是不同的。前者是一个整数，其数值是字母x在机器字符集中对应的数值；后者是一个字符以及一个结束符<code>&#39;\0&#39;</code>的字符数组。</p>
+<h2 id="枚举常量"><a href="#枚举常量" class="headerlink" title="枚举常量"></a><font color="purple">枚举常量</font></h2>
         </div>
 
         <blockquote class="post-copyright">
@@ -307,12 +328,12 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2020-04-23T16:24:30.221Z" itemprop="dateUpdated">2020-04-24 00:24:30</time>
+    最后更新时间：<time datetime="2020-04-25T14:01:51.257Z" itemprop="dateUpdated">2020-04-25 22:01:51</time>
 </span><br>
 
 
         
-        对文章内容有任何看法或觉得内容有不妥之处，可发送邮件至network_szp@foxmail.com进行交流。
+        对文章内容有任何看法或觉得内容有不妥之处，可发送邮件至szp_network@foxmail.com进行交流。
         
     </div>
     
