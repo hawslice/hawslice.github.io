@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://hawslice.com/"/>
-  <updated>2020-04-25T14:01:51.257Z</updated>
+  <updated>2020-05-03T16:23:12.415Z</updated>
   <id>http://hawslice.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>网络安全概述</title>
+    <link href="http://hawslice.com/2020/05/03/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%A6%82%E8%BF%B0/"/>
+    <id>http://hawslice.com/2020/05/03/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%A6%82%E8%BF%B0/</id>
+    <published>2020-05-03T14:42:28.000Z</published>
+    <updated>2020-05-03T16:23:12.415Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="网络安全的基础知识"><a href="#网络安全的基础知识" class="headerlink" title="网络安全的基础知识"></a><font color="purple">网络安全的基础知识</font></h2><h3 id="网络安全的基本概念"><a href="#网络安全的基本概念" class="headerlink" title="网络安全的基本概念"></a><font color="orchid">网络安全的基本概念</font></h3><p>网络安全从其<code>本质</code>上来讲是网络上的<code>信息安全</code>。</p><p>从<code>广义</code>上来说，凡是涉及到网络上信息的<code>保密性</code>、<code>完整性</code>、<code>可用性</code>、<code>真实性</code>和<code>可控性</code>的相关技术与原理，都属于网络安全所要研究的领域。</p><p>网络安全是指网络系统的<code>硬件</code>、<code>软件</code>及其<code>系统中的数据</code>的安全，它体现在信息的<code>存储</code>、<code>传输</code>和<code>使用过程</code>中。</p><h3 id="网络安全的特征"><a href="#网络安全的特征" class="headerlink" title="网络安全的特征"></a><font color="orchid">网络安全的特征</font></h3><ol><li><p><code>保密性</code> 指信息不泄露给非授权的用户、实体或过程，或不供非授权的用户、实体或过程利用的特性。</p></li><li><p><code>完整性</code> 指信息在未经授权不能进行改变的特性，即信息在存储或传输过程中保持不被修改、不被破坏或丢失的特性。</p></li><li><p><code>可用性</code> 指可被授权实体访问并被按需求使用的特性，即当需要时应能存取所需的信息。网络环境下拒绝服务、破坏网络和有关系统的正常运行等都属于对可用性的攻击。</p></li><li><p><code>可控性</code> 指对信息的传播和内容具有控制能力，可以控制授权范围内的信息流向及行为方式。</p></li><li><p><code>可审查性</code> 对出现的安全问题提供调查的依据和手段，用户不能抵赖曾做出的行为，不也能否认曾经接收到对方的信息。</p></li><li><p><code>可保护性</code> 保护软、硬件资源不被非法占有，免受病毒的攻击。</p></li></ol><h3 id="网络安全的目标"><a href="#网络安全的目标" class="headerlink" title="网络安全的目标"></a><font color="orchid">网络安全的目标</font></h3><p>网络安全的目标是确保网络系统的信息安全。网络信息安全主要包括两个方面：<code>信息存储安全</code>和<code>信息传输安全</code>。</p><p>为确保网络信息的传输安全，尤其要防止以下问题：</p><ol><li><p><code>截获</code>（<strong>Interception</strong>）：对网上传输的信息，攻击者只需要在网络的传输链路上通过物理或逻辑的手段，就能对信息进行非法的截获与者监听，进而得到用户或服务方的敏感信息。</p></li><li><p><code>伪造</code>（<strong>Fabrication</strong>）：对用户身份仿冒。</p></li><li><p><code>篡改</code>（<strong>Modification</strong>）：攻击者有可能对网络上的信息进行截获并且篡改其内容（增加、截去或改写），使用户无法获得准确、有用的信息或落入攻击者的陷阱。</p></li><li><p><code>中断</code>（<strong>Interruptin</strong>）：攻击者通过各种方法，中断用户的正常通信，达到自己的目的。</p></li><li><p><code>重发</code>（<strong>Repeat</strong>）：“信息重发”的攻击方式，即攻击者截获网络上的密文信息后，并不将其破译，而是把数据包再次向有关服务器（如银行的交易服务器）发送，以实现恶意的目的。</p></li></ol><h3 id="网络安全需求"><a href="#网络安全需求" class="headerlink" title="网络安全需求"></a><font color="orchid">网络安全需求</font></h3><ol><li><p>解决网络的边界安全问题；</p></li><li><p>保证网络内部的安全；</p></li><li><p>实现系统安全及数据安全；</p></li><li><p>建立全网通行的身份识别系统和用户的统一管理；</p></li><li><p>在用户和资源之间进行严格的访问控制；</p></li><li><p>实现信息传输时数据完整性和保密性；</p></li><li><p>建立一套审计、记录的机制。</p></li></ol><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://teow-md.oss-cn-qingdao.aliyuncs.com/images/安全产品的使用.png" alt="安全产品使用" title="">                </div>                <div class="image-caption">安全产品使用</div>            </figure><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://teow-md.oss-cn-qingdao.aliyuncs.com/images/安全产品类型.png" alt="安全产品类型" title="">                </div>                <div class="image-caption">安全产品类型</div>            </figure><h2 id="威胁网络安全的因素"><a href="#威胁网络安全的因素" class="headerlink" title="威胁网络安全的因素"></a><font color="purple">威胁网络安全的因素</font></h2><p>网络面临的主要威胁：</p><ol><li><p>黑客的攻击</p></li><li><p>管理的缺陷</p></li><li><p>网络额缺陷</p></li><li><p>软件的楼的漏洞或“后门”</p></li><li><p>企业网络内部用户的误操作</p></li></ol><p>目前网络存在的威胁：</p><ol><li><p>非授权访问；</p></li><li><p>信息泄露或丢失；</p></li><li><p>破坏数据完整性；</p></li><li><p>拒绝服务攻击；</p></li><li><p>利用网络传播病毒。</p></li></ol><h2 id="网络安全防护体系"><a href="#网络安全防护体系" class="headerlink" title="网络安全防护体系"></a><font color="purple">网络安全防护体系</font></h2><h3 id="网络安全策略"><a href="#网络安全策略" class="headerlink" title="网络安全策略"></a><font color="orchid">网络安全策略</font></h3><p>网络安全策略时一个系统的概念，它是网络安全系统的灵魂与核心，任何可靠的网络安全系统都是构建在各种安全技术的集成的基础之上的。</p><p>网络安全策略时为了保护网络安全而制定的一系列法律、法规和措施的纵隔。</p><p>网络安全策略主要包含五个方面的策略：</p><ol><li>物理安全策略</li></ol><p>物理安全策略的目的是保护计算机系统、网络服务器、打印机等硬件实体和通信链路免受<code>自然灾害</code>、<code>人为破坏和搭线攻击</code>；验证用户的身份和使用权限、防止用户越权操作；确保计算机系统有一个良好的电磁兼容环境；建立完备的安全管理制度，防止非法进入计算机控制室和各种偷窃、破坏活动的发生。</p><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://teow-md.oss-cn-qingdao.aliyuncs.com/images/物理安全.png" alt="物理安全" title="">                </div>                <div class="image-caption">物理安全</div>            </figure><ol start="2"><li>访问控制策略</li></ol><p>访问控制是网络安全防范和保护的主要策略，它的主要任务是保证网络资源不被非法使用和访问。它也是维护网络系统安全、 保护网络资源的重要手段。 各种安全策略必须相互配合才能真正起到保护作用，但访问控制可以说是保证网络安全最重要的核心策略之一。它主要由<code>入网访问控制</code>、<code>网络的权限控制</code>、<code>目录级安全控制</code>、<code>属性安全控制</code>、<code>网络服务器安全控制</code>、 <code>网络检测</code>和<code>锁定控制及网络端口</code>和<code>结点的安全控制</code>组成。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;网络安全的基础知识&quot;&gt;&lt;a href=&quot;#网络安全的基础知识&quot; class=&quot;headerlink&quot; title=&quot;网络安全的基础知识&quot;&gt;&lt;/a&gt;&lt;font color=&quot;purple&quot;&gt;网络安全的基础知识&lt;/font&gt;&lt;/h2&gt;&lt;h3 id=&quot;网络安全的基本概念
+      
+    
+    </summary>
+    
+    
+      <category term="网络信息安全基础" scheme="http://hawslice.com/categories/%E7%BD%91%E7%BB%9C%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="安全" scheme="http://hawslice.com/tags/%E5%AE%89%E5%85%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>C语言常量</title>
